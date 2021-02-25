@@ -1,0 +1,142 @@
+	/* CSS Style for 'Our Menu' Assignment 2 Solution Webpage.
+	   For Coursera Course HTML, CSS, and Javascript for Webdesign.
+	    ----- Created By Stevie Burton -------*/
+
+	* {
+			box-sizing: border-box;
+			font-family: helvetica neue, Arial, sans-serif;
+			font-size: 18px;
+			letter-spacing: .05em;
+		}
+		body {
+			background-image: url("CSSImages/food_illustration_background.jpg");
+		}
+
+		h1 {
+			margin: 50px 30px 30px 30px;
+			text-align: center;
+			font-size: 175%;
+			background-color: white;
+			width: 87%;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 5px;
+			border: solid black 3px;	
+	    }
+
+
+	    .content {
+	   		width: 90%;
+	    	margin-right: auto;
+	    	margin-left: auto;
+	    }
+
+	    .row {
+            position: relative;
+            float: left;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+	    	height: 100%;
+	    	display: table-cell;
+
+	    }
+
+	    .box {
+	    	position: relative;
+	    	float: left;
+	    	margin-left: auto;
+            margin-right: auto;
+	    	border: solid black 3px;
+	    	background-color: grey;
+	    }
+
+		p {
+			position: relative;
+			float: right;
+			color: black;
+			line-height: 1.4em;
+			padding: 0px 20px 30px 20px;
+			padding-top: 0px
+		}
+
+		.dish {
+			position: relative;
+			float: right;
+			top: 0;
+			right: 0;
+			box-sizing: content-box;
+		    border: 3px solid black;
+		    width: 160px;
+			height: 35px; 
+			margin: -3px -3px 0px 0px;
+		    font-size: 125%;
+		    font-weight: bold;
+		    text-align: center;
+		    line-height: 1.5em;
+		    letter-spacing: .1em;
+		    z-index: 5;
+		}
+
+		#chicken {
+			background-color: #eec8c3;
+			
+		}
+
+		#beef {
+			background-color: #993d33;
+			color: white;
+		}
+
+		#sushi {
+			background-color: #f5efdb;
+		}
+
+		.price {
+			position: absolute;
+			float: right;
+			bottom: 0;
+			right: 0;
+			box-sizing: content-box;
+		    width: 120px;
+			height: 35px; 
+			margin: 0px -3px -3px 0px;
+		    font-size: 125%;
+		    font-weight: bold;
+		    text-align: center;
+		    line-height: 1em;
+		    letter-spacing: .1em;
+		    z-index: 5;
+		    clear: both;
+		}
+
+
+/************** LARGE DEVICES ****************/
+
+		@media (min-width: 992px) {
+
+		.row {
+			width: 33.33%;
+		}	
+	}	
+/*************** MEDIUM DEVICES ***************/
+
+		@media (min-width: 768px) and (max-width: 991px) {
+
+			.row {
+			width: 50%;
+		}	
+			#box3 {
+				clear: left;
+				width: 100%;
+			}
+	}	
+
+/**************** SMALL DEVICES ******************/
+
+			@media (max-width: 767px) {
+
+            .row {
+			width: 100%;
+		    }
+		}

@@ -1,0 +1,188 @@
+/******** CODED BY STEVIE BURTON 2021 as part of assignments for HTML, CSS & JAVASCRIPT for Webdevelopers Course on Coursera **********/ 
+
+
+body {
+	font-size: 16px;
+	color: #333333;
+	background-color: #cccccc;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+}
+
+/** HEADER **/
+#header-nav {
+	background-color: #808080; 
+	border-radius: 0;
+	border: 0;
+	border-color: #808080;
+}
+
+#logo-img {
+	background: url('../images/logo-placeholder-icon-80.png') no-repeat;
+	width: 80px;
+	height: 80px;
+	margin: 10px 15px 10px 0;
+}
+
+.navbar-brand h1 {
+	color: #333333;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 4em;
+	margin-top: 0px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+#nav-list a {
+	color: #f2f2f2;
+	text-align: center;
+	line-height: 0.75em;
+	font-family: 'Bebas Neue', sans-serif;
+	letter-spacing: 0.2em;
+}
+#nav-list a:hover {
+	background: #f2f2f2;
+	color: #000;
+	font-weight: bold;
+}
+#nav-list a span {
+	font-size: 100%;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #fff;
+}
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
+#bs-example-navbar-collapse-1 a span {
+	margin-right: 5px;
+	margin-left: 5px;
+	color: #333333;
+}
+/** END HEADER **/
+
+/** MAIN CONTENT **/
+
+#main-content {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+section.row {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#page-heading {
+	font-size: 1em;
+	font-size: 2.75em;
+	font-family: 'Bebas Neue', sans-serif;
+	letter-spacing: 0.2em;
+	margin-top: 50px;
+}
+
+section .menu-tile-content {
+	background-color: #f2f2f2;
+	border: solid 2px #595959;
+	margin-top: 30px;
+}
+section .menu-tile-title {
+	padding: 15px 0 15px 0;
+	font-family: 'Bebas Neue', sans-serif;
+	letter-spacing: 0.15em;
+	font-size: 2em;
+}
+section .menu-tile-text {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+div .back-top {
+	padding: 15px;
+}
+.back-top span { /** Glyphicons **/
+	color: #808080;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.back-top a { /** Back To Top **/
+	text-decoration: none;
+	font-family: 'Bebas Neue', sans-serif;
+	color: #333333;
+	font-size: 1.5em;
+}
+.back-top a:hover {
+	color: #808080;
+}
+
+/** END MAIN CONTENT **/
+
+/***** MEDIA QUERIES *******/
+
+/******************** LARGE (lg) DEVICES ONLY ******************/
+@media (min-width: 1200px) {
+/** CONTENT **/
+	section .menu-tile-text {
+		width: 100%;
+		padding-left: 1.75vw;
+		padding-right: 1.75vw;
+	}
+/** END CONTENT **/
+}
+
+/******************** MEDIUM (md) DEVICES ONLY ******************/
+@media (min-width: 992px) and (max-width: 1199px) {
+/** CONTENT **/
+	section .menu-tile-text {
+		width: 100%;
+		padding-left: 1.75vw;
+		padding-right: 1.75vw;
+	}
+/** END CONTENT **/
+
+}
+
+/******************** SMALL (sm) DEVICES ONLY ******************/
+@media (min-width: 768px) and (max-width: 991px) {
+/** CONTENT **/
+	section .menu-tile-text {
+		width: 100%;
+		padding-left: 4vw;
+		padding-right: 4vw;
+	}
+/** END CONTENT **/
+}
+
+/******************** SMALL (xs) DEVICES ONLY ******************/
+@media (max-width: 767px) {
+ /** HEADER **/
+ 	.navbar-brand {
+ 		padding-bottom: 60px;
+	}
+ 	.navbar-brand h1 {
+ 		font-size: 3em;
+	}
+
+ /** END HEADER **/
+
+/** MAIN CONTENT **/
+
+ 	section .menu-tile-title {
+		letter-spacing: 0.125em;
+		font-size: 1.75em;
+	}
+	#page-heading {
+		font-size: 2.5em;
+	}
+	section .menu-tile-text {
+		width: 100%;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+}
